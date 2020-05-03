@@ -1,0 +1,256 @@
+@charset "UTf-8";
+
+/* 共通 */
+
+html {
+	font-size: 100%;
+}
+
+body {
+	font-family: Avenir, 'ヒラギノ角ゴ Pro W3', sans-serif;
+	line-height: 1.7;
+}
+
+a {
+	text-decoration: none;
+}
+
+.wrapper {
+	margin: 0 auto;
+	padding: 0 4%;
+}
+
+.about h2,
+.about h3,
+.works h2 {
+	text-align: center;
+}
+
+.about h2,
+.works h2 {
+	width: 300px;
+	font-size: 3rem;
+	font-weight: normal;
+	border-bottom: 2px #000 solid;
+	margin: 0 auto 50px;
+	letter-spacing: 1rem;
+	text-indent: 1rem;
+}
+
+/* トップ */
+
+.top {
+	height: 100vh;
+	background-color: #6ae4bb;
+	text-align: center;
+}
+
+.top h1 {
+	width: 550px;
+	font-size: 4rem;
+	font-weight: normal;
+	letter-spacing: 1.5rem;
+	text-indent: 1.5rem;
+	color: #fff;
+	margin: 0 auto 150px;
+	border-bottom: 2px #fff solid;
+	padding-top: 18%;
+}
+
+/* About */
+
+.about {
+	width: 70%;
+	/* height: 500px; */
+	margin: 50px auto 100px;
+}
+
+.about_contents {
+	display: flex;
+	justify-content: space-between;
+}
+
+.profile,
+.interest {
+	width: 40%;
+}
+
+.profile_contents,
+.interest_contents {
+	display: flex;
+	justify-content: space-between;
+}
+
+.profile h3,
+.interest h3 {
+	font-size: 2rem;
+	font-weight: normal;
+	margin-bottom: 10px;
+	text-indent: 0.3rem;
+	letter-spacing: 0.3rem;
+}
+
+.profile_contents {
+	margin-top: 50px;
+}
+
+.profile_contents img {
+	min-width: 160px;
+	max-height: 160px;
+}
+
+.profile_contents .profile_text {
+	padding-top: 20px;
+	padding-left: 20px;
+}
+
+.profile_text p.name {
+	font-size: 1.2rem;
+	margin-bottom: 20px;
+}
+
+.interest_contents h4 {
+	text-align: center;
+	font-weight: normal;
+	font-size: 1.2rem;
+}
+
+.interest_contents ul {
+	list-style: '- ';
+}
+
+.design_list {
+	padding-left: 48px;
+}
+.front_list {
+	padding-left: 38px;
+}
+
+/* 作品群 */
+
+.works {
+	width: 70%;
+	/* height: 500px; */
+	margin: 50px auto;
+}
+
+.works_contents {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.card {
+	width: 21%;
+	height: 300px;
+	margin-bottom: 50px;
+}
+
+.card_image {
+	height: 50%;
+	background-color: #666666;
+}
+
+.card_image a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.card_content {
+	height: 50%;
+	background-color: #eee;
+	position: relative;
+	padding: 6% 4% 4%;
+}
+
+.card_text {
+	font-size: 0.9rem;
+	padding-top: 4%;
+}
+
+.card_more {
+	position: absolute;
+	bottom: 2%;
+	right: 4%;
+	color: #222;
+}
+.card_more:hover {
+	color: #6ae4bb;
+}
+
+/* フッター */
+
+footer {
+	height: 30px;
+	background-color: #6ae4bb;
+	text-align: center;
+	line-height: 30px;
+	color: #fff;
+}
+
+/* モバイル用 */
+
+@media (max-width: 600px) {
+	.top h1 {
+		width: 300px;
+		font-size: 3rem;
+		font-weight: normal;
+		letter-spacing: 0.5rem;
+		text-indent: 0.5rem;
+		border-bottom: 2px #fff solid;
+		padding-top: 50%;
+	}
+
+	.about h2,
+	.works h2 {
+		width: 200px;
+		font-size: 2.5rem;
+		margin: 0 auto 50px;
+		letter-spacing: 0.5rem;
+		text-indent: 0.5rem;
+	}
+
+	.profile h3,
+	.interest h3 {
+		font-size: 2rem;
+		text-indent: 0.3rem;
+		letter-spacing: 0.3rem;
+	}
+
+	.about {
+		width: 80%;
+		/* height: 500px; */
+		margin: 50px auto;
+	}
+
+	.about_contents {
+		flex-direction: column;
+	}
+
+	.profile {
+		width: 100%;
+		margin-bottom: 50px;
+	}
+
+	.profile_contents {
+		margin-top: 0px;
+	}
+
+	.profile_contents img {
+		min-width: 150px;
+	}
+
+	.interest {
+		width: 100%;
+	}
+
+	.works {
+		width: 80%;
+		margin: 0 auto 50px;
+	}
+
+	.card {
+		width: 45%;
+	}
+}
