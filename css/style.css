@@ -54,8 +54,10 @@ a {
 	color: #fff;
 	margin: 0 auto 150px;
 	border-bottom: 2px #fff solid;
-	padding-top: 18%;
+	padding-top: 30vh;
 }
+
+/* vh,vw：ウィンドウ幅に対する% 　%:親要素に対する%*/
 
 /* About */
 
@@ -95,8 +97,8 @@ a {
 }
 
 .profile_contents img {
-	min-width: 160px;
-	max-height: 160px;
+	width: 40%;
+	height: auto;
 }
 
 .profile_contents .profile_text {
@@ -199,13 +201,13 @@ footer {
 		letter-spacing: 0.5rem;
 		text-indent: 0.5rem;
 		border-bottom: 2px #fff solid;
-		padding-top: 50%;
+		padding-top: 30vh;
 	}
 
 	.about h2,
 	.works h2 {
 		width: 200px;
-		font-size: 2.5rem;
+		font-size: 2rem;
 		margin: 0 auto 50px;
 		letter-spacing: 0.5rem;
 		text-indent: 0.5rem;
@@ -213,13 +215,13 @@ footer {
 
 	.profile h3,
 	.interest h3 {
-		font-size: 2rem;
+		font-size: 1.5rem;
 		text-indent: 0.3rem;
 		letter-spacing: 0.3rem;
 	}
 
 	.about {
-		width: 80%;
+		width: 85%;
 		/* height: 500px; */
 		margin: 50px auto;
 	}
@@ -238,19 +240,57 @@ footer {
 	}
 
 	.profile_contents img {
-		min-width: 150px;
+		min-width: 20%;
+		height: auto;
+	}
+
+	.profile_text p.name {
+		font-size: 1rem;
+	}
+
+	.profile_contents .profile_text {
+		padding-top: 20px;
+		padding-left: 20px;
+		font-size: 0.8rem;
 	}
 
 	.interest {
 		width: 100%;
 	}
 
+	.interest_contents h4 {
+		font-size: 1.1rem;
+	}
+
+	.interest_contents ul {
+		list-style: '- ';
+		font-size: 0.8rem;
+	}
+
 	.works {
 		width: 80%;
-		margin: 0 auto 50px;
+		margin: 0 auto;
 	}
 
 	.card {
 		width: 45%;
+	}
+
+	.card_title {
+		font-size: 0.9rem;
+	}
+
+	.card_text {
+		font-size: 0.8rem;
+		padding-top: 3%;
+	}
+
+	.card_more {
+		font-size: 0.8rem;
+		color: #222;
+	}
+
+	footer {
+		font-size: 0.8rem;
 	}
 }
